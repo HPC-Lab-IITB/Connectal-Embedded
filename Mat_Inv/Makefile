@@ -1,0 +1,11 @@
+CONNECTALDIR?=../..
+S2H_INTERFACES = IntoHardware:MI.in
+H2S_INTERFACES = MI:FromHardware
+
+BSVFILES = MI.bsv
+CPPFILES= testMI.cpp
+
+CONNECTALFLAGS += -D TRACE_PORTAL
+
+include $(CONNECTALDIR)/Makefile.connectal
+
