@@ -1,1 +1,2 @@
-
+This implements the Vector Dot Product of 2 Vectors of same length with length being a parameter to be varied and size of the element in the matrix is also defined as a parameter(using typedef) and can be varied.
+Input from Software to hardware is always a 64-bit number, depening on the size of each element in the vector and size of the vector, the number of inputs need to be provided to hardware changes.
