@@ -12,3 +12,5 @@ In the code provided,
             vector length = 8
             then, the number of 64-bit inputs to be sent to hardware = 4
 ```
+
+Output will be a scalar quantity in this case is a 64-bit number.
