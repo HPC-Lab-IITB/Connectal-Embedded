@@ -2,7 +2,7 @@ This implements the Vector Dot Product of 2 Vectors of same length with length b
 
 Input from Software to hardware is always a 64-bit number, depening on the size of each element in the vector and size of the vector, the number of inputs need to be provided to hardware changes.
 
-#### Example-1:
+### Example-1:
             size of each element = 16 bits
             vector length = 4
             then, the number of 64-bit inputs to be sent to hardware = 64bits (i.e., 1-number)
