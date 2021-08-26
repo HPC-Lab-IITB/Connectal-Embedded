@@ -14,3 +14,6 @@ In the code provided,
 ```
 
 Output will be a scalar quantity in this case is a 64-bit number.
+
+Input : 2 input vectors taken in the form of 2 arrays.
+Output : A scalar quantity.
