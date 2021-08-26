@@ -1,0 +1,11 @@
+CONNECTALDIR?=../..
+S2H_INTERFACES = IntoHardware:VDP.in
+H2S_INTERFACES = VDP:FromHardware
+
+BSVFILES = VDP.bsv
+CPPFILES= testVDP.cpp
+
+CONNECTALFLAGS += -D TRACE_PORTAL
+
+include $(CONNECTALDIR)/Makefile.connectal
+
