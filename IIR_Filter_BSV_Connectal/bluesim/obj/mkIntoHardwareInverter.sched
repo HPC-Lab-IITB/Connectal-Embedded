@@ -1,0 +1,17 @@
+=== Generated schedule for mkIntoHardwareInverter ===
+
+Method schedule
+---------------
+Method: ifc_hardware_input
+Ready signal: fifo_hardware_input.i_notFull
+Conflict-free: inverseIfc_hardware_input
+Conflicts: ifc_hardware_input
+ 
+Method: inverseIfc_hardware_input
+Ready signal: fifo_hardware_input.i_notEmpty
+Conflict-free: ifc_hardware_input
+Conflicts: inverseIfc_hardware_input
+ 
+Logical execution order: ifc_hardware_input, inverseIfc_hardware_input
+
+======================================================

@@ -1,0 +1,97 @@
+*** Segmentation fault
+Register dump:
+
+ RAX: 0000000000000046   RBX: 0000000000000000   RCX: 0000000000000000
+ RDX: 0000000000000000   RSI: 0000000000000000   RDI: 0000000000000000
+ RBP: 0000000000000000   R8 : 0000000000000000   R9 : 0000000000000046
+ R10: 000055eae722d0b1   R11: 0000000000000000   R12: 0000000000000000
+ R13: 00007ffc27432470   R14: 0000000000000000   R15: 0000000000000000
+ RSP: 00007ffc27432020
+
+ RIP: 00007f1236beaf5b   EFLAGS: 00010202
+
+ CS: 0033   FS: 0000   GS: 0000
+
+ Trap: 0000000e   Error: 00000004   OldMask: 00000000   CR2: 00000000
+
+ FPUCW: 0000037f   FPUSW: 00000000   TAG: 00000000
+ RIP: 00000000   RDP: 00000000
+
+ ST(0) 0000 0000000000000000   ST(1) 0000 0000000000000000
+ ST(2) 0000 0000000000000000   ST(3) 0000 0000000000000000
+ ST(4) 0000 0000000000000000   ST(5) 0000 0000000000000000
+ ST(6) 0000 0000000000000000   ST(7) 0000 0000000000000000
+ mxcsr: 1f80
+ XMM0:  00000000000000000000000025252525 XMM1:  00000000000000000000000025252525
+ XMM2:  00000000000000000000000025252525 XMM3:  00000000000000000000000025252525
+ XMM4:  00000000000000000000000025252525 XMM5:  00000000000000000000000025252525
+ XMM6:  00000000000000000000000025252525 XMM7:  00000000000000000000000025252525
+ XMM8:  00000000000000000000000025252525 XMM9:  00000000000000000000000025252525
+ XMM10: 00000000000000000000000025252525 XMM11: 00000000000000000000000025252525
+ XMM12: 00000000000000000000000025252525 XMM13: 00000000000000000000000025252525
+ XMM14: 00000000000000000000000025252525 XMM15: 00000000000000000000000025252525
+
+Backtrace:
+/lib/x86_64-linux-gnu/libc.so.6(fclose+0xb)[0x7f1236beaf5b]
+./bin/ubuntu.exe(+0x3a30)[0x55eae7225a30]
+./bin/ubuntu.exe(+0x3ce8)[0x55eae7225ce8]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3)[0x7f1236b8d0b3]
+./bin/ubuntu.exe(+0x38ce)[0x55eae72258ce]
+
+Memory map:
+
+55eae7222000-55eae7225000 r--p 00000000 08:07 9961725                    /home/likhita/connectal/examples/IIR_Fil/bluesim/bin/ubuntu.exe
+55eae7225000-55eae722d000 r-xp 00003000 08:07 9961725                    /home/likhita/connectal/examples/IIR_Fil/bluesim/bin/ubuntu.exe
+55eae722d000-55eae7231000 r--p 0000b000 08:07 9961725                    /home/likhita/connectal/examples/IIR_Fil/bluesim/bin/ubuntu.exe
+55eae7232000-55eae7233000 r--p 0000f000 08:07 9961725                    /home/likhita/connectal/examples/IIR_Fil/bluesim/bin/ubuntu.exe
+55eae7233000-55eae7234000 rw-p 00010000 08:07 9961725                    /home/likhita/connectal/examples/IIR_Fil/bluesim/bin/ubuntu.exe
+55eae7234000-55eae7298000 rw-p 00000000 00:00 0 
+55eae84d2000-55eae84f3000 rw-p 00000000 00:00 0                          [heap]
+7f1236211000-7f1236212000 ---p 00000000 00:00 0 
+7f1236212000-7f1236a17000 rw-p 00000000 00:00 0 
+7f1236a17000-7f1236a26000 r--p 00000000 08:07 933725                     /lib/x86_64-linux-gnu/libm-2.31.so
+7f1236a26000-7f1236acd000 r-xp 0000f000 08:07 933725                     /lib/x86_64-linux-gnu/libm-2.31.so
+7f1236acd000-7f1236b64000 r--p 000b6000 08:07 933725                     /lib/x86_64-linux-gnu/libm-2.31.so
+7f1236b64000-7f1236b65000 r--p 0014c000 08:07 933725                     /lib/x86_64-linux-gnu/libm-2.31.so
+7f1236b65000-7f1236b66000 rw-p 0014d000 08:07 933725                     /lib/x86_64-linux-gnu/libm-2.31.so
+7f1236b66000-7f1236b8b000 r--p 00000000 08:07 933723                     /lib/x86_64-linux-gnu/libc-2.31.so
+7f1236b8b000-7f1236d03000 r-xp 00025000 08:07 933723                     /lib/x86_64-linux-gnu/libc-2.31.so
+7f1236d03000-7f1236d4d000 r--p 0019d000 08:07 933723                     /lib/x86_64-linux-gnu/libc-2.31.so
+7f1236d4d000-7f1236d4e000 ---p 001e7000 08:07 933723                     /lib/x86_64-linux-gnu/libc-2.31.so
+7f1236d4e000-7f1236d51000 r--p 001e7000 08:07 933723                     /lib/x86_64-linux-gnu/libc-2.31.so
+7f1236d51000-7f1236d54000 rw-p 001ea000 08:07 933723                     /lib/x86_64-linux-gnu/libc-2.31.so
+7f1236d54000-7f1236d58000 rw-p 00000000 00:00 0 
+7f1236d58000-7f1236d5b000 r--p 00000000 08:07 917549                     /lib/x86_64-linux-gnu/libgcc_s.so.1
+7f1236d5b000-7f1236d6d000 r-xp 00003000 08:07 917549                     /lib/x86_64-linux-gnu/libgcc_s.so.1
+7f1236d6d000-7f1236d71000 r--p 00015000 08:07 917549                     /lib/x86_64-linux-gnu/libgcc_s.so.1
+7f1236d71000-7f1236d72000 r--p 00018000 08:07 917549                     /lib/x86_64-linux-gnu/libgcc_s.so.1
+7f1236d72000-7f1236d73000 rw-p 00019000 08:07 917549                     /lib/x86_64-linux-gnu/libgcc_s.so.1
+7f1236d73000-7f1236e09000 r--p 00000000 08:07 11141484                   /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28
+7f1236e09000-7f1236efa000 r-xp 00096000 08:07 11141484                   /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28
+7f1236efa000-7f1236f43000 r--p 00187000 08:07 11141484                   /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28
+7f1236f43000-7f1236f44000 ---p 001d0000 08:07 11141484                   /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28
+7f1236f44000-7f1236f4f000 r--p 001d0000 08:07 11141484                   /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28
+7f1236f4f000-7f1236f52000 rw-p 001db000 08:07 11141484                   /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28
+7f1236f52000-7f1236f55000 rw-p 00000000 00:00 0 
+7f1236f55000-7f1236f5c000 r--p 00000000 08:07 933736                     /lib/x86_64-linux-gnu/libpthread-2.31.so
+7f1236f5c000-7f1236f6d000 r-xp 00007000 08:07 933736                     /lib/x86_64-linux-gnu/libpthread-2.31.so
+7f1236f6d000-7f1236f72000 r--p 00018000 08:07 933736                     /lib/x86_64-linux-gnu/libpthread-2.31.so
+7f1236f72000-7f1236f73000 r--p 0001c000 08:07 933736                     /lib/x86_64-linux-gnu/libpthread-2.31.so
+7f1236f73000-7f1236f74000 rw-p 0001d000 08:07 933736                     /lib/x86_64-linux-gnu/libpthread-2.31.so
+7f1236f74000-7f1236f78000 rw-p 00000000 00:00 0 
+7f1236f78000-7f1236f79000 r--p 00000000 08:07 925704                     /lib/x86_64-linux-gnu/libSegFault.so
+7f1236f79000-7f1236f7c000 r-xp 00001000 08:07 925704                     /lib/x86_64-linux-gnu/libSegFault.so
+7f1236f7c000-7f1236f7d000 r--p 00004000 08:07 925704                     /lib/x86_64-linux-gnu/libSegFault.so
+7f1236f7d000-7f1236f7e000 r--p 00004000 08:07 925704                     /lib/x86_64-linux-gnu/libSegFault.so
+7f1236f7e000-7f1236f7f000 rw-p 00005000 08:07 925704                     /lib/x86_64-linux-gnu/libSegFault.so
+7f1236f7f000-7f1236f81000 rw-p 00000000 00:00 0 
+7f1236faa000-7f1236fab000 r--p 00000000 08:07 917550                     /lib/x86_64-linux-gnu/ld-2.31.so
+7f1236fab000-7f1236fce000 r-xp 00001000 08:07 917550                     /lib/x86_64-linux-gnu/ld-2.31.so
+7f1236fce000-7f1236fd6000 r--p 00024000 08:07 917550                     /lib/x86_64-linux-gnu/ld-2.31.so
+7f1236fd7000-7f1236fd8000 r--p 0002c000 08:07 917550                     /lib/x86_64-linux-gnu/ld-2.31.so
+7f1236fd8000-7f1236fd9000 rw-p 0002d000 08:07 917550                     /lib/x86_64-linux-gnu/ld-2.31.so
+7f1236fd9000-7f1236fda000 rw-p 00000000 00:00 0 
+7ffc27413000-7ffc27435000 rw-p 00000000 00:00 0                          [stack]
+7ffc274c7000-7ffc274ca000 r--p 00000000 00:00 0                          [vvar]
+7ffc274ca000-7ffc274cb000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 --xp 00000000 00:00 0                  [vsyscall]

@@ -1,0 +1,15 @@
+=== Generated schedule for mkFromHardwareInverterV ===
+
+Method schedule
+---------------
+Method: ifc_hardware_output
+Ready signal: inv_hardware_output_inverter.RDY_mod_put
+Conflict-free: ifc_hardware_output, inverseIfc_hardware_output
+ 
+Method: inverseIfc_hardware_output
+Ready signal: inv_hardware_output_inverter.RDY_inverse_get
+Conflict-free: ifc_hardware_output, inverseIfc_hardware_output
+ 
+Logical execution order: ifc_hardware_output, inverseIfc_hardware_output
+
+=======================================================
